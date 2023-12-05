@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/404.css">
+    <link rel="shortcut icon" href="./img/favicon.svg">
+
+    <title>Page 404</title>
+</head>
+<body>
+    <div class="error-page">
+        <header class="error-page__header">
+            <div class="container">
+                <div class="logo"><a href="index.html">Logo</a></div>
+
+                <div class="menu">
+                    <input type="checkbox" id="check-menu">
+                    <label for="check-menu" class="label-menu">Menu</label>
+                    <label for="check-menu">
+                        <div class="burger-line first"></div>
+                    </label>
+                    <label for="check-menu">
+                        <div class="burger-line second"></div>
+                    </label>
+                    <label for="check-menu">
+                        <div class="burger-line third"></div>
+                    </label>
+                    <label for="check-menu">
+                        <div class="burger-line fourth"></div>
+                    </label>
+                    <nav class="main-menu">
+                            <li><a href="#About-us" class="main-menu__item">About us</a></li>
+                            <li><a href="#Epochs" class="main-menu__item">Epochs</a></li>
+                            <li><a href="#Culture" class="main-menu__item">Culture</a></li>
+                            <li><a href="#Films" class="main-menu__item">Films</a></li>
+                            <li><a href="#Contacts" class="main-menu__item">Contacts</a></li>
+                    </nav>
+                </div>
+
+                <form class="search-container">
+                    <input type="text" class="search-input" placeholder="Поиск">
+                    <button class="search-button">
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.1878 24.8619L19.1078 17.7819C20.8092 15.7394 21.6576 13.1195 21.4766 10.4674C21.2955 7.81529 20.099 5.33505 18.1359 3.54267C16.1727 1.75029 13.5941 0.783757 10.9365 0.844143C8.27892 0.904529 5.7469 1.98718 3.8672 3.86688C1.9875 5.74658 0.904851 8.2786 0.844465 10.9362C0.784079 13.5938 1.75061 16.1724 3.54299 18.1355C5.33538 20.0987 7.81561 21.2952 10.4677 21.4762C13.1199 21.6573 15.7397 20.8089 17.7822 19.1075L24.8622 26.1875L26.1878 24.8619ZM2.75032 11.1875C2.75032 9.51872 3.24517 7.88742 4.1723 6.49988C5.09942 5.11234 6.41718 4.03088 7.95893 3.39227C9.50068 2.75365 11.1972 2.58656 12.8339 2.91212C14.4706 3.23769 15.974 4.04128 17.154 5.22129C18.334 6.40129 19.1376 7.90471 19.4632 9.54143C19.7888 11.1781 19.6217 12.8746 18.9831 14.4164C18.3444 15.9581 17.263 17.2759 15.8754 18.203C14.4879 19.1302 12.8566 19.625 11.1878 19.625C8.95082 19.6225 6.80615 18.7328 5.22435 17.151C3.64255 15.5692 2.7528 13.4245 2.75032 11.1875Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="container">
+                <h1 class="error-page__main-headline">404</h1>              
+
+                <div class="error-page__text">
+                    <p class="error-page__first-paragraph">The page you were looking for doesn’t exist!</p>
+                    <p class="error-page__second-paragraph">Back to <button onclick="window.location.href = 'index.html';" class="error-page__button" type="button">HOME</button></p>                 
+                </div>
+            </div>
+        </section>
+    </div>    
+</body>
+</html>

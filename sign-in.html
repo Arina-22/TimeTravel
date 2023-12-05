@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/favicon.svg">
+    <link rel="stylesheet" href="css/sign-in.css">
+    <title>Time Travel</title>
+</head>
+
+<body>
+    <main>
+        <div class="background-image"></div>
+        <div class="form-background"></div>
+        <div class="container">
+            <p id="back">
+                <a href="registration.html"><span></span></a>
+            </p>
+
+            <h1>Time travel</h1>
+
+            <div class="register-form-container">
+                <h2 class="form-title">Welcome back</h2>
+                <p class="caption">Login in your account</p>
+
+                <div class="form-fields">
+                    <div class="form-field">
+                        <input type="text" class="person-icon" placeholder="Full name" required>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" class="lock-eye-icon" placeholder="........" required>
+                    </div>
+                </div>
+
+                <div class="form-capture">
+                    <label class="custom-checkbox">
+                        <input class="hidden-checkbox" type="checkbox">
+                        <span class="checkbox">
+                            <img src="./img/checked.svg" alt="checkmark" class="checkmark">
+                        </span>
+                        Remember me
+                    </label>
+    
+                    <div class="forgot-button-wrapper">
+                        <button onclick="window.location.href = '';" class="forgot-button" type="button">Forgot password?</button>
+                    </div>
+                </div>
+
+                <p class="intro">We invite you to dive into history and discover new eras and events! </p>
+
+                <div class="form-buttons">
+                    <div class="sign-in-button-wrapper">
+                        <button onclick="window.location.href = '404.html';" class="sign-in-button" type="button">Sign in</button>
+                    </div>
+
+                    <div class="alternative">
+                        <p class="divider">Don’t have an account?</p>
+
+                        <div class="sign-up-button-wrapper">
+                            <button onclick="window.location.href = 'sign-up.html';" class="sign-up-button" type="button">Sign up!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

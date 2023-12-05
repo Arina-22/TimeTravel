@@ -1,0 +1,1261 @@
+@font-face {
+    font-family: 'Goudy Old Style';
+    src: url("../Fonts/ Old Style CG ATT CYR") format('otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1;
+}
+
+::selection {
+    background-color: #efece5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFEFB;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+nav li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1880px;
+    margin: 0 auto;
+}
+
+.second-headlines {
+    font-family: 'Goudy Old Style', serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+
+.third-headlines {
+    font-family: 'Goudy Old Style', serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 125%;
+}
+
+.main-text {
+    font-family: 'Halant', serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: clamp(15px, 4.2vw, 80px);
+    margin-right: clamp(15px, 4.2vw, 80px);
+    color: #333332;
+
+}
+
+.buttons {
+    background-color: transparent;
+    font-family: 'Halant', serif;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    background: linear-gradient(to left, #fff 50%, #efece5 50%) right;
+    background-size: 200%;
+    transition: all 0.5s ease;
+}
+
+.buttons:hover {
+    background-position: left;
+    cursor: pointer;
+}
+
+.buttons-text {
+    color: #000;
+    font-family: 'Halant', serif;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+
+.img-description-text {
+    font-family: 'Halant', serif;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+
+.descriptions {
+    font-family: 'Goudy Old Style', serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+}
+
+.descriptions:hover {
+    font-weight: 600;
+}
+
+#back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 8px;
+}
+
+#back-top span {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    display: block;
+    margin-bottom: 7px;
+    background: rgba(255, 255, 255, 0.6) url(../img/up-arrow.png) no-repeat center center;
+    background-size: 68%;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+#back-top a:hover span {
+    background-color: #efece5;
+}
+
+.home-section {
+    background-image: url(../img/home-section-img-egypt.webp);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.home-section__header {
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: clamp(20px, 5vw, 60px);
+    padding-right: clamp(20px, 5vw, 60px);
+    border-bottom: 1px solid #fff;
+}
+
+.home-section__header>.container {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.logo,
+.main-menu__item,
+.home-section__epochs-list-item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+}
+
+#check-menu {
+    display: none;
+}
+
+.label-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.home-section__epochs-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu {
+    padding-right: 10px;
+}
+
+.main-menu {
+    display: flex;
+    gap: clamp(12px, 4vw, 40px);
+    text-align: center;
+}
+
+a.main-menu__item:hover,
+li.home-section__epochs-list-item:hover {
+    text-decoration: underline;
+    text-shadow: 0.01px 0 #fff,
+        0 0.01px #fff,
+        -0.01px 0 #fff,
+        0 -0.01px #fff;
+}
+
+.main-menu__item {
+    margin-right: clamp(12px, 4vw, 40px);
+    text-align: center;
+}
+
+.home-section__epochs-list-item {
+    margin-right: clamp(12px, 4vw, 44px);
+    text-align: center;
+}
+
+.main-menu__item:last-child,
+.home-section__epochs-list-item:last-child {
+    margin-right: 0;
+}
+
+.search-container {
+    display: inline-block;
+}
+
+.search-input {
+    width: 120px;
+    padding: 6px;
+    margin-top: 6px;
+    border: 2px solid white; 
+    height: 27px;
+    outline: none; 
+    background-color: transparent;
+    color: #212121;
+    display: none;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.search-container{
+display: flex;
+}
+
+.search-container:hover .search-input {
+   display: block;
+}
+
+.home-section__main-headline {
+    font-family: 'Cormorant', serif;
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 20px 0 20px;
+    line-height: 95%;
+}
+
+.home-section__epochs-list {
+    justify-content: center;
+    margin: 13px 30px;
+}
+
+.home-section__epochs-list-item {
+    font-weight: 400;
+}
+
+.home-section__button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 76px;
+    margin-top: 434px;
+}
+
+.home-section__button {
+    border: 1px solid #fff;
+    width: 192px;
+    height: 52px;
+    font-family: 'Halant', serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 130%;
+    color: #fff;
+    text-shadow: 0.01px 0 #fff,
+        0 0.01px #fff,
+        -0.01px 0 #fff,
+        0 -0.01px #fff;
+    background: linear-gradient(to left, rgba(70, 70, 70, 0) 50%, rgba(25, 25, 25, 0.4) 50%) right;
+    background-size: 200%;
+    transition: all 0.5s ease;
+}
+
+.home-section__button:hover {
+    background-position: left;
+    cursor: pointer;
+}
+
+/* -------------------2----------------- */
+/* -------------------2----------------- */
+/* -------------------2----------------- */
+/* -------------------2----------------- */
+/* -------------------2----------------- */
+
+.about-section {
+    margin-bottom: 60px;
+}
+
+.about-section__block {
+    display: flex;
+    justify-content: space-between;
+    margin: clamp(10px, 4.2vw, 80px);
+}
+
+.about-section__first-text-block,
+.about-section__second-text-block,
+.about-section__third-text-block {
+    width: clamp(300px, 36vw, 700px);
+    margin-top: clamp(30px, 2vw, 40px);
+}
+
+.about-section__first-text-block,
+.about-section__second-text-block {
+    margin-bottom: clamp(30px, 2.9vw, 55px);
+}
+
+.about-section__second-text-section {
+    margin-top: 48px;
+}
+
+.about-section__third-headline {
+    margin-bottom: 30px;
+}
+
+.little-text {
+    font-family: 'Halant', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 135%;
+}
+
+.about-section__first-img,
+.about-section__second-img {
+    width: clamp(300px, 36.5vw, 700px);
+    height: clamp(227px, 27.5vw, 529px);
+    margin: auto 0;
+}
+
+.about-section__button {
+    width: 174px;
+    height: 51px;
+    border: 1px solid #000;
+    margin-top: 33px;
+}
+
+.third-img-section {
+    display: flex;
+}
+
+.about-section__img-description {
+    width: 240px;
+    margin: 550px 25px 0 0;
+    line-height: 133%;
+}
+
+.img-description-line {
+    width: 264px;
+    height: 1px;
+    background-color: #000;
+}
+
+.about-section__third-img {
+    width: clamp(300px, 18.2vw, 350px);
+    height: clamp(580px, 35.2vw, 677px);
+    margin: auto 0;
+}
+
+
+/* -------------------3----------------- */
+/* -------------------3----------------- */
+/* -------------------3----------------- */
+/* -------------------3----------------- */
+/* -------------------3----------------- */
+
+.epochs-section {
+    margin-bottom: 90px;
+}
+
+.epochs-section__headline-section,
+.culture-section__headline-section,
+.films-section__headline-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.preheadline-decoration {
+    display: flex;
+    flex-direction: row-reverse;
+    place-items: center;
+    margin-left: clamp(10px, 4.2vw, 80px);
+}
+
+.postheadline-decoration {
+    display: flex;
+    place-items: center;
+    margin-right: clamp(10px, 4.2vw, 80px);
+}
+
+.line {
+    width: clamp(20px, 30vw, 690px);
+    height: 1px;
+    background-color: #000;
+}
+
+.circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background-color: #323232;
+}
+
+.epochs-section__main-headline,
+.culture-section__main-headline {
+    margin-left: clamp(20px, 3.1vw, 60px);
+    margin-right: clamp(20px, 3.1vw, 60px);
+}
+
+.epochs-section__epochs-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr);
+    grid-template-rows: repeat(9, 6vw);
+    grid-gap: clamp(10px, 1vw, 20px);
+    margin: 50px 0 40px 0;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.epochs-cards {
+    display: table;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    transition: 300ms;
+
+}
+
+.epochs-cards:hover {
+    filter: brightness(70%);
+}
+
+.epoch-card-title {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.first-epoch-card {
+    background-image: url(../img/egypt-epoch.webp);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.second-epoch-card {
+    background-image: url(../img/greece-epoch.webp);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.third-epoch-card {
+    background-image: url(../img/middleages-epoch.webp);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.fourth-epoch-card {
+    background-image: url(../img/renaissance-epoch.webp);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 10;
+}
+
+.fifth-epoch-card {
+    background-image: url(../img/XIX-epoch.webp);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 10;
+}
+
+.sixth-epoch-card {
+    background-image: url(../img/XX-epoch.webp);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 10;
+}
+
+/* -------------------4----------------- */
+/* -------------------4----------------- */
+/* -------------------4----------------- */
+/* -------------------4----------------- */
+/* -------------------4----------------- */
+
+.culture-section {
+    margin-bottom: 90px;
+}
+
+.culture-section__main-headline {
+    margin: 0 auto;
+}
+
+.culture-section__architecture-block-img {
+    margin: 35px auto;
+    margin-bottom: 0;
+}
+
+.culture-section__preheadline-section {
+    display: flex;
+    margin-top: 20px;
+    place-items: center;
+    justify-content: center;
+}
+
+.culture-section-preheadline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.culture-section__preheadline-line {
+    width: 6px;
+    height: 1px;
+    background-color: #000;
+    margin: 0 6px;
+}
+
+.culture-section-headline {
+    text-transform: none;
+    margin-right: clamp(10px, 1vw, 20px);
+    margin-left: clamp(10px, 1vw, 20px);
+    margin-top: 8px;
+}
+
+.architecture-block-paragraph {
+    text-align: center;
+    margin-right: clamp(10px, 4.2vw, 80px);
+    margin-left: clamp(10px, 4.2vw, 80px);
+    margin-top: 20px;
+}
+
+.culture-section__slider {
+    margin-top: 60px;
+}
+
+.culture-section__slider-line {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    grid-auto-columns: 36%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-right: clamp(0px, 3.1vw, 60px);
+    margin-left: clamp(0px, 3.1vw, 60px);
+}
+
+.culture-section__personalities-block,
+.culture-section__events-block,
+.culture-section__artwork-block,
+.culture-section__traditions-block {
+    max-width: 650px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    padding-left: clamp(15px, 1vw, 20px);
+}
+
+.personalities-block-paragraph,
+.events-block-paragraph,
+.artwork-block-paragraph,
+.traditions-block-paragraph {
+    text-align: center;
+    margin: 21px 6px 0 6px;
+}
+
+.culture-section__buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.culture-section__button {
+    width: 161px;
+    height: 46px;
+    border: 1px solid #000;
+    background-color: transparent;
+}
+
+/* -------------------5----------------- */
+/* -------------------5----------------- */
+/* -------------------5----------------- */
+/* -------------------5----------------- */
+/* -------------------5----------------- */
+
+.films-section {
+    margin-bottom: 90px;
+}
+
+.films-section__slider {
+    margin: 60px 0;
+}
+
+.films-section__second-slider-line {
+    margin-top: 60px;
+}
+
+.films-section__first-slider-line,
+.films-section__second-slider-line {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-right: clamp(0px, 3.1vw, 60px);
+    margin-left: clamp(0px, 3.1vw, 60px);
+}
+
+.films-section__slider-egypt-block,
+.films-section__slider-greece-block,
+.films-section__slider-middleages-block,
+.films-section__slider-renaissance-block,
+.films-section__slider-XIXcentury-block,
+.films-section__slider-XXcentury-block {
+    display: flex;
+    justify-content: space-between;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.films-section__slider-egypt-block,
+.films-section__slider-greece-block,
+.films-section__slider-middleages-block,
+.films-section__slider-renaissance-block,
+.films-section__slider-XIXcentury-block,
+.films-section__slider-XXcentury-block {
+    padding-left: clamp(15px, 2vw, 50px);
+    padding-right: clamp(15px, 2vw, 50px);
+}
+
+.films-section__slider-text-section {
+    max-width: 40vw;
+}
+
+.films-section__slider-film-description {
+    margin-top: 25px;
+}
+
+.films-section__slider-img-section {
+    display: flex;
+}
+
+.films-section__img {
+    width: clamp(270px, 36.4vw, 510px);
+    height: clamp(270px, 36.4vw, 510px);
+}
+
+.films-section__img-description {
+    width: 150px;
+    margin: 460px 25px 0 0;
+    margin-top: clamp(280px, 33vw, 460px);
+    line-height: 133%;
+}
+
+/* -------------------6----------------- */
+/* -------------------6----------------- */
+/* -------------------6----------------- */
+/* -------------------6----------------- */
+/* -------------------6----------------- */
+
+.footer {
+    font-family: 'Halant', serif;
+}
+
+.footer__information {
+    display: flex;
+    justify-content: space-between;
+    padding-left: clamp(20px, 3.1vw, 60px);
+    padding-right: clamp(15px, 4.2vw, 80px);
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.footer__text {
+    display: flex;
+    gap: clamp(30px, 3.1vw, 60px);
+    white-space: nowrap;
+}
+
+.footer__text-headline {
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 12px;
+}
+
+.footer__text-link {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+}
+
+.footer__line {
+    margin-top: 36px;
+}
+
+.footer__text-link:hover {
+    font-weight: 600;
+}
+
+.footer__rights {
+    margin-top: 40px;
+    margin-left: clamp(10px, 4.2vw, 80px);
+    margin-bottom: 36px;
+}
+
+
+
+
+
+@media (min-width: 2500px) {
+    .films-section__slider-text-section {
+        max-width: 53%;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .culture-section__slider-line {
+        grid-auto-columns: 45%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .img-description-line {
+        width: 155px;
+    }
+
+    .about-section__img-description {
+        width: 130px;
+    }
+
+    .films-section__img-description>.img-description-line {
+        display: none;
+    }
+
+    .films-section__slider-img-section {
+        display: grid;
+        margin: auto 0;
+    }
+
+    .films-section__img-description {
+        margin: 0;
+    }
+
+    .films-section__img-description {
+        width: 170px;
+        order: 2;
+    }
+
+    .films-section__img-description>.img-description-text {
+        margin-top: 5px;
+        width: clamp(270px, 36.4vw, 437px);
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .about-section__block {
+        display: grid;
+    }
+
+    .about-section__first-text-block,
+    .about-section__second-text-block,
+    .about-section__third-text-block {
+        width: clamp(300px, 92vw, 920px);
+    }
+
+    .about-section__first-img,
+    .about-section__second-img {
+        width: clamp(300px, 60vw, 600px);
+        height: clamp(227px, 45vw, 453px);
+    }
+
+    .about-section__second-img {
+        order: 2;
+    }
+
+    .about-section__second-text-block {
+        order: 1;
+    }
+
+    .about-section__third-block-paragraph {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .about-section__img-description {
+        margin: 10px 0 0 0;
+        order: 3;
+    }
+
+    .about-section__third-img {
+        order: 2;
+    }
+
+    .img-description-line {
+        width: 264px;
+        margin-left: -25px;
+    }
+
+    .about-section__img-description {
+        width: 240px;
+        margin-top: 550px;
+        margin-left: 25px;
+    }
+
+    .line {
+        width: clamp(40px, 24vw, 300px);
+    }
+
+    .epochs-section__epochs-cards {
+        grid-template-columns: repeat(2, 0.45fr);
+        grid-template-rows: repeat(15, 9vw);
+        grid-gap: clamp(10px, 2vw, 20px);
+    }
+
+    .first-epoch-card {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+
+    .second-epoch-card {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+
+    .third-epoch-card {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 11;
+    }
+
+    .fourth-epoch-card {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 11;
+    }
+
+    .fifth-epoch-card {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 11;
+        grid-row-end: 16;
+    }
+
+    .sixth-epoch-card {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 11;
+        grid-row-end: 16;
+    }
+
+    .culture-section__slider-line {
+        grid-auto-columns: 50%;
+    }
+
+    .footer__information {
+        max-width: 100vw;
+    }
+
+    .films-section__slider-egypt-block,
+    .films-section__slider-greece-block,
+    .films-section__slider-middleages-block,
+    .films-section__slider-renaissance-block,
+    .films-section__slider-XIXcentury-block,
+    .films-section__slider-XXcentury-block {
+        display: grid;
+    }
+
+    .films-section__slider-text-section {
+        max-width: 100vw;
+    }
+
+    .films-section__slider-film-description {
+        margin-bottom: 25px;
+    }
+
+    .films-section__slider_second-slider-line {
+        margin-top: 50px;
+    }
+
+    .films-section__img-description>.img-description-line {
+        display: block;
+        width: 180px;
+        margin: 0;
+        margin-top: clamp(225px, 33vw, 300px);
+    }
+
+    .films-section__img-description>.img-description-text {
+        width: 180px;
+        text-align: right;
+    }
+
+    .films-section__slider-img-section {
+        display: flex;
+    }
+
+    .films-section__first-slider-line,
+    .films-section__second-slider-line {
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .culture-section__slider-line {
+        grid-auto-columns: 65%;
+    }
+
+    .search-input {
+        width: 60px;
+    }
+}
+
+
+@media (min-width: 621px) {
+    .label-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .menu {
+        position: relative;
+        text-align: center;
+        height: 40px;
+        width: 180px;
+        color: #fff;
+    }
+
+    label {
+        display: block;
+        position: absolute;
+        left: 45px;
+        cursor: pointer;
+        z-index: 2;
+        line-height: 40px;
+    }
+
+    .search-input {
+        width: 100px;
+    }
+
+    .burger-line {
+        position: absolute;
+        top: 8px;
+        left: 55px;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        transition: 0.5s all;
+    }
+
+    .second,
+    .third {
+        top: 18px;
+    }
+
+    .fourth {
+        top: 28px;
+    }
+
+    .main-menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        max-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+
+    .main-menu__item {
+        display: block;
+        width: 100%;
+        color: rgba(70, 70, 70);
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .main-menu__item:first-child {
+        border-top: none;
+    }
+
+    /* при переключении чекбокса в положение 
+checked следующий дочерний элемент 
+с классом main-menu: */
+
+    #check-menu:checked~.main-menu {
+        max-height: 500px;
+        font-size: 15px;
+    }
+
+    #check-menu:checked~.first {
+        display: none;
+    }
+
+    #check-menu:checked~.second {
+        transform: rotate(45deg);
+    }
+
+    #check-menu:checked~.third {
+        transform: rotate(-45deg);
+    }
+
+    #check-menu:checked~.fourth {
+        display: none;
+    }
+
+    .main-text {
+        font-size: 24px;
+    }
+
+    .third-img-section {
+        display: grid;
+    }
+
+    .img-description-line {
+        display: none;
+    }
+
+    .home-section__button-wrapper {
+        margin-top: 150px;
+    }
+
+    .about-section__img-description {
+        margin-top: 10px;
+    }
+
+    .line {
+        width: clamp(40px, 18vw, 150px);
+    }
+
+    .epochs-section__epochs-cards {
+        grid-template-columns: repeat(1, 0.7fr);
+        grid-template-rows: repeat(30, 15vw);
+        grid-gap: clamp(10px, 2vw, 20px);
+    }
+
+    .first-epoch-card,
+    .second-epoch-card,
+    .third-epoch-card,
+    .fourth-epoch-card,
+    .fifth-epoch-card,
+    .sixth-epoch-card {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .first-epoch-card {
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+
+    .second-epoch-card {
+        grid-row-start: 6;
+        grid-row-end: 11;
+    }
+
+    .third-epoch-card {
+        grid-row-start: 11;
+        grid-row-end: 16;
+    }
+
+    .fourth-epoch-card {
+        grid-row-start: 16;
+        grid-row-end: 21;
+    }
+
+    .fifth-epoch-card {
+        grid-row-start: 21;
+        grid-row-end: 26;
+    }
+
+    .sixth-epoch-card {
+        grid-row-start: 26;
+        grid-row-end: 31;
+    }
+
+    .culture-section__slider-line {
+        grid-auto-columns: 90%;
+    }
+
+    .about-section__third-img {
+        margin: auto;
+    }
+
+    .about-section__img-description {
+        margin: 10px auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .films-section__img-description>.img-description-line {
+        width: 140px;
+    }
+
+    .films-section__img-description>.img-description-text {
+        width: 140px;
+    }
+
+    .home-section__epochs-list {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .home-section__epochs-list-item {
+        margin: 0;
+        margin-top: 8px;
+    }
+
+    .line {
+        width: clamp(40px, 12vw, 90px);
+    }
+
+    .culture-section-headline {
+        font-size: 42px;
+    }
+
+    .films-section__slider-img-section {
+        display: grid;
+    }
+
+    .films-section__img-description>.img-description-line {
+        display: none;
+        margin: 0;
+    }
+
+    .films-section__img-description>.img-description-text {
+        width: clamp(270px, 60vw, 300px);
+        text-align: center;
+    }
+
+    .films-section__slider_second-slider-line {
+        margin-top: 40px;
+    }
+
+    .films-section__slider-img-section {
+        margin: auto;
+    }
+
+    .films-section__slider-egypt-block,
+    .films-section__slider-greece-block,
+    .films-section__slider-middleages-block,
+    .films-section__slider-renaissance-block,
+    .films-section__slider-XIXcentury-block,
+    .films-section__slider-XXcentury-block {
+        padding: 8px;
+    }
+
+    .epochs-section,
+    .culture-section,
+    .films-section {
+        margin-bottom: 40px;
+    }  
+}
+
+
+@media (max-width: 400px) {
+    .home-section__main-headline {
+        margin-right: clamp(8px, 1vw, 20px);
+        margin-left: clamp(8px, 1vw, 20px);
+    }
+
+    .search-input{
+        width: 50px;
+    }
+
+    .preheadline-decoration,
+    .postheadline-decoration {
+        display: none;
+    }
+
+    .epochs-section__main-headline,
+    .films-section__main-headline {
+        margin: 0 auto;
+    }
+
+    .culture-section__slider-line {
+        grid-auto-columns: 100%;
+    }
+
+    .footer__information {
+        display: grid;
+        justify-content: space-around;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+    }
+
+    .footer__text {
+        margin-top: 10px;
+    }
+}

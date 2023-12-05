@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::selection {
+    background-color: #efece5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EFECE5;
+}
+
+main{
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeForm .5s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes fadeForm {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+    }
+    70%{
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.background-image {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    display: block;
+    background-image: url(../img/registration.png);
+    width: 430px;
+    height: 932px;
+    -webkit-filter: blur(1px) brightness(75%);
+    -moz-filter: blur(1px) brightness(75%);
+    -o-filter: blur(1px) brightness(75%);
+    -ms-filter: blur(1px) brightness(75%);
+    filter: blur(1px) brightness(75%);
+}
+
+.container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Cormorant', serif;
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 159px;
+}
+
+.register-form-container{
+    margin: 300px 36px 0 36px;
+    background-color: #EFECE5;
+}
+
+.register-form-container>p{
+    font-family: 'Halant', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    line-height: 135%;
+    padding: 38px 29px 31px 29px;
+    opacity: 80%;
+}
+
+.registration-buttons{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.sign-in-button-wrapper{
+    background-color: #1F1F1F;
+    width: 112px;
+    height: 40px;
+    text-align: center;
+    margin-left: 57px;
+}
+
+.sign-in-button:hover, .sign-up-button:hover{
+    cursor: pointer;
+}
+
+.sign-up-button:hover{
+    border-bottom: 0.5px solid #1F1F1F;
+}
+
+.sign-up-button-wrapper{
+    margin-left: 47px;
+    width: 112px;
+    height: 40px;
+}
+
+.sign-in-button, .sign-up-button{
+    font-family: 'MonteCarlo';
+    font-size: 22px;
+    border-color: transparent;
+}
+
+.sign-in-button{
+    color: #fff;
+    margin-top: -1px;
+    margin-left: -3px;
+}
+
+.sign-up-button{
+    margin-top: -1px;
+    margin-left: -3px;
+}
+
+button{
+    background-color: transparent;
+}
