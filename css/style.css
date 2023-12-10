@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0;
     height: 0;
 }
 
@@ -661,24 +661,6 @@ display: flex;
     justify-content: space-between;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-}
-
-.films-section__slider-egypt-block::-webkit-scrollbar,
-.films-section__slider-greece-block::-webkit-scrollbar,
-.films-section__slider-middleages-block::-webkit-scrollbar,
-.films-section__slider-renaissance-block::-webkit-scrollbar,
-.films-section__slider-XIXcentury-block::-webkit-scrollbar,
-.films-section__slider-XXcentury-block::-webkit-scrollbar{
-    width:0;
-    heigth: 0;
-}
-
-.films-section__slider-egypt-block,
-.films-section__slider-greece-block,
-.films-section__slider-middleages-block,
-.films-section__slider-renaissance-block,
-.films-section__slider-XIXcentury-block,
-.films-section__slider-XXcentury-block {
     padding-left: clamp(15px, 2vw, 50px);
     padding-right: clamp(15px, 2vw, 50px);
 }
