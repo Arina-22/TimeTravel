@@ -663,6 +663,16 @@ display: flex;
     scroll-snap-stop: always;
 }
 
+.films-section__slider-egypt-block::-webkit-scrollbar,
+.films-section__slider-greece-block::-webkit-scrollbar,
+.films-section__slider-middleages-block::-webkit-scrollbar,
+.films-section__slider-renaissance-block::-webkit-scrollbar,
+.films-section__slider-XIXcentury-block::-webkit-scrollbar,
+.films-section__slider-XXcentury-block::-webkit-scrollbar{
+    width:0;
+    heigth: 0;
+}
+
 .films-section__slider-egypt-block,
 .films-section__slider-greece-block,
 .films-section__slider-middleages-block,
